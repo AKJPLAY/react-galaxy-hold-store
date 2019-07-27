@@ -8,6 +8,9 @@
     --mainBlack:    #222;
     --mainTransition: all 0.3s ease-in-out;
     --mainSpacing: 0.3rem;
+    --lenColor: linear-gradient(58.07deg, #9327f5 0%, #8c2ff3 11.29%, #7a44ed 28.63%, #5c67e2 49.87%, #3398d4 74.18%, #00d4c3 100%);
+    --sideBgColor: #8F2AF4;
+    --cardBgColor: #07CCC5;
 }
 
 .title-text {
