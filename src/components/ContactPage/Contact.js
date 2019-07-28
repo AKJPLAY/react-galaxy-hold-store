@@ -1,35 +1,63 @@
-import React from 'react';
-import Title from '../Title';
-
-
+import React from "react";
+import Title from "../Title";
 export default function Contact() {
-    return <section className="py-5">
-        <div className="row" style={{margin: "0px"}}>
-            <div className=".col-10 mx-auto col-md-6 my-3">
-                <Title title="Contact Us"/>
-                <form className="mt-5" action="https://formspree.io/goboxify@gmail.com" method="POST">
-                    {/** firstName */}
-                    <div className="form-group">
-                        <input type="text" name="FirstName" className="form-control" placeholder="Enter Name"/>
-                    </div>
-                    {/** email */}
-                    <div className="form-group">
-                        <input type="email" name="email" className="form-control" placeholder="Enter Email" />
-                    </div>
-                    {/** Subject */}
-                    <div className="form-group">
-                        <input type="text" name="Subject" className="form-control" placeholder="Enter Subject important!!!"/>
-                    </div>
-                    {/** text area */}
-                    <div className="form">
-                    <textarea name="message" className="w-100"   rows="10"  placeholder="Enter Your Message to us"></textarea>
-                    </div>
-                    {/** Submit */}
-                    <div className="form-group mt-3">
-                        <input type="submit" className="form-control bg-primary text-white" value="Send Mail"/>
-                    </div>
-                </form>
+  return (
+    <section className="py-5">
+      <div className="row">
+        <div className="col-10 mx-auto col-md-6 my-3">
+          <Title title="contact us" />
+          <form
+            className="mt-5"
+            action="https://formspree.io/learncodetutorial@gmail.com"
+            method="POST"
+          >
+            {/* first */}
+            <div className="form-group">
+              <input
+                type="text"
+                name="firstName"
+                className="form-control"
+                placeholder="john smith"
+              />
             </div>
+            {/* email */}
+            <div className="form-group">
+              <input
+                type="email"
+                name="email"
+                className="form-control"
+                placeholder="email@email.com"
+              />
+            </div>
+            {/* subject */}
+            <div className="form-group">
+              <input
+                type="text"
+                name="subject"
+                className="form-control"
+                placeholder="important!!!!"
+              />
+            </div>
+            {/* message */}
+            <div className="form">
+              <textarea
+                name="message"
+                className="form-control"
+                rows="10"
+                placeholder="hello there buddy"
+              />
+            </div>
+            {/* submit */}
+            <div className="form-group mt-3">
+              <input
+                type="submit"
+                value="Send"
+                className="form-control bg-primary text-white"
+              />
+            </div>
+          </form>
         </div>
+      </div>
     </section>
+  );
 }

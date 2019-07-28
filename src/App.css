@@ -1,53 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans");
 
 :root {
-    --primaryColor: #5fb7ea;
-    --primaryRGBA:  rgba(0,0,0,.3);
-    --mainGray:     #fafafa;
-    --darkGray:     #5f5e5e;
-    --mainBlack:    #222;
-    --mainWhite:    #fff;
-    --mainTransition: all 0.3s ease-in-out;
-    --mainSpacing: 0.3rem;
-    --lenColor: linear-gradient(58.07deg, #9327f5 0%, #8c2ff3 11.29%, #7a44ed 28.63%, #5c67e2 49.87%, #3398d4 74.18%, #00d4c3 100%);
-    --sideBgColor: #8F2AF4;
-    --cartBgColor: #07CCC5;
+  --primaryColor: #5fb7ea;
+  --primaryRGBA: rgba(0, 0, 0, 0.3);
+  --mainGrey: #fafafa;
+  --darkGrey: #5f5e5e;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainTransition: all 0.3s ease-in-out;
+  --mainSpacing: 0.3rem;
+  --navbarBgColor : linear-gradient(58.07deg, #9327f5 0%, #8c2ff3 11.29%, #7a44ed 28.63%, #5c67e2 49.87%, #3398d4 74.18%, #00d4c3 100%);
+  --sideBarBgColor: #9327f5;
+  --cardBgColor: #5c67e2;
 }
-
-.title-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    letter-spacing: var(--mainSpacing);
-    text-transform: capitalize;
+.text-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
 }
-
 .text-main {
-    color: var(--primaryColor);
+  color: var(--primaryColor);
 }
-
 body {
-    font-family:  'Open Sans', sans-serif !important;
-    background: var(--mainGray) !important;
-    color: var(--mainBlack);
+  font-family: "Open Sans", sans-serif !important;
+  background: var(--mainGrey) !important;
+  color: var(--mainBlack);
 }
-
 .main-link {
-    padding:  .8rem;
-    background: var(--primaryColor);
-    color: var(--mainWhite);
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: var(--mainSpacing);
-    outline: 2px solid var(--primaryColor);
-    outline-offset: 4px;
-    border: none;
-    transition: var(--mainTransition);
+  padding: 0.5rem 1rem;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  outline: 2px solid var(--primaryColor);
+  outline-offset: 4px;
+  border: none;
+  transition: var(--mainTransition);
 }
-
 .main-link:hover {
-    text-decoration: none;
-    background: var(--darkGray);
-    color: var(--primaryColor);
-    outline-color: var(--darkGray);
+  background: var(--darkGrey);
+  text-decoration: none;
+  color: var(--primaryColor);
+  outline-color: var(--darkGrey);
 }
-
+.cart-icon {
+  cursor: pointer;
+}
