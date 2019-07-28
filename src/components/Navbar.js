@@ -6,11 +6,13 @@ import { ProductConsumer } from '../context';
 export default function Navbar() {
     return <ProductConsumer>
         {value => {
-            const{cartItems, handleSidbar, handleCart} = value;
+            const {cartItems, handleCart, handleSidbar} = value;
             return <NavWrapper>
                 <div className="nav-center">
-                    <FaBars className="nav-icon" onClick={handleSidbar}/>
-                    <img src={require('../images/logo.png')} alt="goboxify logo"/>
+                    <div className="nav-sidebar">
+                        <FaBars className="nav-icon" onClick={handleSidbar}/>
+                    </div>
+                    <img className="logo" src={require('../images/logo.png')} alt="goboxify logo"/>
                     <div className="nav-cart">
                         <FaCartPlus className="nav-icon" onClick={handleCart}/>
                         <div className="cart-items">{cartItems}</div>
@@ -24,6 +26,7 @@ export default function Navbar() {
 const NavWrapper = styled.nav`
     position: -webkit-sticky;
     position: sticky;
+    z-index: 1000;
     top: 0;
     width: 100%;
     padding: 1rem 1.5rem;
@@ -40,6 +43,9 @@ const NavWrapper = styled.nav`
         font-size: 1.5rem;
         cursor: pointer;
     }
+    .nav-sidbar {
+        position: relative;
+    }
     .nav-cart {
         position: relative;
     }
@@ -51,6 +57,9 @@ const NavWrapper = styled.nav`
         right: -8px;
         padding: 0 5px;
         border-radius: 50%;
+    }
+    .logo {
+        width: 180px;
     }
 
 `
