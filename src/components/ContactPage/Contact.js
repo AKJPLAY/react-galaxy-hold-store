@@ -1,14 +1,15 @@
 import React from "react";
 import Title from "../Title";
+import styled from 'styled-components';
 export default function Contact() {
   return (
-    <section className="py-5">
+    <ContactWrapper className="py-5">
       <div className="row">
         <div className="col-10 mx-auto col-md-6 my-3">
           <Title title="contact us" />
           <form
             className="mt-5"
-            action="https://formspree.io/learncodetutorial@gmail.com"
+            action="https://formspree.io/goboxify@gmail.com"
             method="POST"
           >
             {/* first */}
@@ -58,6 +59,13 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </section>
+    </ContactWrapper>
   );
 }
+
+
+const ContactWrapper = styled.section`
+.row {
+  margin: 0;
+}
+`

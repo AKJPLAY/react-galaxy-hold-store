@@ -46,10 +46,11 @@ export default function SideCart() {
 
 const CartWrapper = styled.div`
   position: fixed;
-  top: 84px;
+  top: 68px;
   right: 0;
   width: 100%;
   height: 100%;
+  text-align: center;
   background: var(--cardBgColor);
   z-index: 1;
   transform: ${props => (props.show ? "translateX(0)" : "translateX(100%)")};

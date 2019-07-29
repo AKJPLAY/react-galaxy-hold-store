@@ -58,6 +58,6 @@ const NavWrapper = styled.nav`
     border-radius: 50%;
   }
   .logo {
-    width:180px;
+    width:120px;
   }
 `;

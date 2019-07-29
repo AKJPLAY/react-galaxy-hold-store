@@ -33,10 +33,11 @@ export default function Sidebar() {
 
 const SideWrapper = styled.nav`
   position: fixed;
-  top: 84px;
+  top: 68px;
   left: 0;
   width: 100%;
   height: 100%;
+  text-align: center;
   background: var(--sideBarBgColor);
   z-index: 1;
   border-right: 4px solid var(--primaryColor);
